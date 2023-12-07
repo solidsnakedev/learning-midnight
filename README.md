@@ -1,9 +1,9 @@
 ```mermaid
 flowchart LR
     A((Compact compiler))
-    A --> B1[Contract]
-    A --> B2[Zkir]
-    A --> B3[Keys]
+    A --> B1[Contract \n Typescript/Javascript API]
+    A --> B2[Zkir \n Circuits Intermediate Representation]
+    A --> B3[Keys \n Circuits Prover and Verifier Keys]
 ```
 
 
