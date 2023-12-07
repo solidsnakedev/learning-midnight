@@ -54,11 +54,14 @@ graph TD
 ```
 
 ```mermaid
-flowchart LR
-    A((Compact compiler))
-    A --> B1[Contract \n Typescript/Javascript API]
-    A --> B2[Zkir \n Circuits Intermediate Representation]
-    A --> B3[Keys \n Circuits Prover and Verifier Keys]
+flowchart
+  direction LR
+  A((Compact compiler)) --> B1[Contract \n Typescript/Javascript API]
+  B1 --> C1[Circuits]
+  B1 --> C2[Ledger]
+  B1 --> C3[Witnesses]
+  A --> B2[Zkir \n Circuits Intermediate Representation]
+  A --> B3[Keys \n Circuits Prover and Verifier Keys]
 ```
 
 
