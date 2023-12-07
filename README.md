@@ -88,12 +88,16 @@ graph TD
 ```mermaid
 flowchart
   direction LR
-  A((Compact compiler)) --> B1[Contract \n Typescript/Javascript API]
-  B1 --> C1[Circuits]
-  B1 --> C2[Ledger]
-  B1 --> C3[Witnesses]
-  A --> B2[Zkir \n Circuits Intermediate Representation]
-  A --> B3[Keys \n Circuits Prover and Verifier Keys]
+  A((Compact compiler)) -->|Generates folder| B1[Contract \n Typescript/Javascript API]
+  B1 -->|Compiled Types| C2[Ledger]
+  B1 -->|Compiled Types| C4[Contract]
+  C4 -->|Compiled Types| C1[Circuits]
+  C4 -->|Compiled Types| C3[Witnesses]
+  A -->|Generates folder| B2[Zkir \n Circuits Intermediate Representation]
+  B2 --> B21[*.zkir file]
+  A -->|Generates folder| B3[Keys \n Circuits Prover and Verifier Keys]
+  B3 --> D1[*.prover key]
+  B3 --> D2[*.verifier key]
 ```
 
 
