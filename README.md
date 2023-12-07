@@ -1,4 +1,21 @@
 ```mermaid
+---
+title: DevnetRemoteConfig
+---
+graph TD
+
+  subgraph Developer Machine
+    A[Local Proof Server] -->|Connects to| B[Developer Machine]
+  end
+
+  subgraph Remote
+    C[Remote Indexer] -.->|Connects to| B
+    D[Remote Node] -.->|Connects to| B
+  end
+```
+
+
+```mermaid
 classDiagram
   class Enum {
     TypeA | TypeB
