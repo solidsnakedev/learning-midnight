@@ -1,5 +1,20 @@
 ```mermaid
 ---
+title:  StandaloneConfig
+---
+graph TD
+
+  subgraph Developer Machine
+    A[Local Proof Server] -->|Connects to| B[Developer Machine]
+    C[Local Indexer] -.->|Connects to| B
+    D[Local Node] -.->|Connects to| B
+  end
+
+```
+
+
+```mermaid
+---
 title: DevnetRemoteConfig
 ---
 graph TD
