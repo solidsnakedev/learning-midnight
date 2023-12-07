@@ -1,13 +1,13 @@
 ```mermaid
 ---
-title:  StandaloneConfig
+title:  StandaloneConfig | DevnetLocalConfig
 ---
 graph TD
 
   subgraph Developer Machine
     A[Local Proof Server] -->|Connects to| B[Developer Machine]
-    C[Local Indexer] -.->|Connects to| B
-    D[Local Node] -.->|Connects to| B
+    C[Local Indexer] -->|Connects to| B
+    D[Local Node] -->|Connects to| B
   end
 
 ```
