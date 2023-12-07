@@ -1,5 +1,23 @@
 ```mermaid
 classDiagram
+  class Enum {
+    TypeA | TypeB
+  }
+
+  class TypeA {
+    PrimitiveTypes | CompositeTypes
+  }
+
+  class TypeB {
+    PrimitiveTypes | CompositeTypes
+  }
+
+  Enum <|-- TypeA
+  Enum <|-- TypeB
+```
+
+```mermaid
+classDiagram
   class Primitive Types {
     Boolean
     Void
