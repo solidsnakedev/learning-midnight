@@ -1,4 +1,28 @@
 ```mermaid
+classDiagram
+  class Primitive Types {
+    Boolean
+    Void
+    Field
+    UnsignedInteger
+    UnsignedIntegerLessOrEqual
+    Bytes
+    Vector
+    Opaque
+  }
+
+  Primitive Types --> Boolean
+  Primitive Types --> Void
+  Primitive Types --> Field
+  Primitive Types --> UnsignedInteger
+  Primitive Types --> UnsignedIntegerLessOrEqual
+  Primitive Types --> Bytes
+  Primitive Types --> Vector
+  Primitive Types --> Opaque
+```
+
+
+```mermaid
 graph TD
   A((Main Circuit)) -->|Generates| B((Inner Circuit 1))
   A -->|Generates| C((Inner Circuit 2))
